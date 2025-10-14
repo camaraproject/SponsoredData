@@ -7,29 +7,52 @@
 <a href="https://github.com/camaraproject/SponsoredData/releases/latest" title="Latest Release"><img src="https://img.shields.io/github/release/camaraproject/SponsoredData?style=plastic"></a>
 <a href="https://github.com/camaraproject/Governance/blob/main/ProjectStructureAndRoles.md" title="Sandbox API Repository"><img src="https://img.shields.io/badge/Sandbox%20API%20Repository-yellow?style=plastic"></a>
 
-# SponsoredData
+# SponsoredData API
 
-Sandbox API Repository to describe, develop, document, and test the SponsoredData Service API(s). The repository does not yet belong to a CAMARA Sub Project.
+**Sandbox API Repository** to describe, develop, document, and test the **Sponsored Data Service API(s)**.  
+This repository currently belongs to the *Sandbox* stage and is under active development within the CAMARA framework.
 
 * API Repository [wiki page](https://lf-camaraproject.atlassian.net/wiki/x/f4CVDg)
 
+---
+
 ## Scope
 
-* Service API(s) “SponsoredData” (see APIBacklog.md) 
-* The API(s) provide(s) the API consumer with the ability to:  
-  * §Short API scope description§ !! Add here a scope description according to the API proposal
-* Describe, develop, document, and test the API(s)
-* Started: §start date§
-<!-- * Incubating stage since: {{incubation date}} --> 
+The **Sponsored Data** API enables a sponsoring company to cover the data usage of end users for a defined period and/or data volume, thereby strengthening its brand presence and enhancing the user experience.
+
+The API is organized into three hierarchical levels:
+
+- **Sponsor:** The company that finances the sponsored data usage.  
+- **Campaigns:** Sets of sponsorship actions contracted by sponsors for various commercial or marketing purposes.  
+- **Sponsored Subscribers:** Individual users participating in a campaign, who opt in to receive sponsored data for a defined volume and duration. The sponsorship is always activated upon the user’s explicit choice or consent.  
+
+Campaigns can follow one of two commercial models:
+
+Campaigns can be organized under different commercial models, depending on the sponsorship agreement between the Sponsor and the Operator:
+
+- **Prepaid** — The Sponsor pre-purchases a total data volume, from which units are deducted as sponsored sessions are started and consumed.  
+- **Postpaid** — The Sponsor is billed at the end of the campaign cycle based on the actual sponsored data consumption.
+
+The API supports the following operations:
+
+- `/start-sponsorship`  
+- `/session-status`  
+- `/revoke-sponsorship`  
+- `/campaign-status`  
+- `/active-sponsorships`  
+- `/configure-alerts`  
+- `/campaign-management`
+
+Identifiers such as **Sponsor_Id**, **Campaign_ID** and **Session_ID** are generated and managed by the Operator Platform (MNO). 
+
+---
 
 ## Release Information
 
-The repository has no (pre)releases yet, work in progress is within the main branch.
-<!-- Optional: an explicit listing of the latest (pre-)release with additional information, e.g. links to the API definitions -->
-<!-- In addition use/uncomment one or multiple the following alternative options when becoming applicable -->
-<!-- Pre-releases of this sub project are available in https://github.com/camaraproject/SponsoredData/releases -->
-<!-- The latest public release is available here: https://github.com/camaraproject/SponsoredData/releases/latest -->
-<!-- For changes see [CHANGELOG.md](https://github.com/camaraproject/SponsoredData/blob/main/CHANGELOG.md) -->
+The repository has no (pre)releases yet, work in progress is within the main branch.  
+
+
+---
 
 ## Contributing
 
@@ -37,7 +60,7 @@ The repository has no (pre)releases yet, work in progress is within the main bra
 
   * Schedule: !! tbd
   * [Registration / Join](https://zoom-lfx.platform.linuxfoundation.org/meetings/telcoapi) !! Update this link with your meeting registration/join link and delete the task
-  * Minutes: Access [meeting minutes](https://lf-camaraproject.atlassian.net/wiki/x/f4CVDg) !! update this link to your minutes archive page using the "Share" link and delete the task
+  * Minutes: Access [meeting minutes](https://lf-camaraproject.atlassian.net/wiki/spaces/CAM/pages/245760081/Minutes+-+SponoredData) !! update this link to your minutes archive page using the "Share" link and delete the task
 * Mailing List
   * Subscribe / Unsubscribe to the mailing list <https://lists.camaraproject.org/g/sp-sponsored-data>.
   * A message to the community of this Sub Project can be sent using <sp-sponsored-data@lists.camaraproject.org>.
