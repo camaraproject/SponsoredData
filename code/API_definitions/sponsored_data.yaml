@@ -3,10 +3,10 @@ info:
   title: Sponsored Data API
   version: wip
   description: |
-  
+
     Sponsored Data API for OpenGateway/CAMARA Project
 
-    * Working draft under discussion. Draft reference: draft-0.1 (commit, Oct 14th 2025) *
+    * Working draft under discussion. Draft reference vesrion : draft-0.1 (commit, Oct 14th 2025) *
 
     The Sponsored Data API allows sponsoring companies (EPs) to cover the cost of mobile data access for end-users on 4G and 5G networks. This API is part of the Open Gateway/CAMARA initiative and provides a set of operations for the dynamic management of mobile data sponsorship. Sponsoring companies can start or revoke sponsorships for users, as well as query the status of both sponsorship sessions and their campaigns.
     [TODO: Pensar si vale la pena poner elegibilidad, balance y pausa de campaña]
@@ -17,7 +17,7 @@ info:
     Objective of This Initial Version
     In this initial version of the API, the sponsorship is proposed for all data traffic (ANY) carried by the user's default bearer, for a specified volume and time, without focusing on a specific destination.
 
-    * Onboarding * 
+    * Onboarding *
     Onboarding is the process by which a Sponsoring Company (EP) contracts a Sponsorship Campaign with the API Gateway Platform (OpenGateway) and the specific Mobile Network Operator (MNO). Initially, this event is supported by the signing of an agreement or documentation outlining the general objectives of the campaign and default sponsorship conditions. For example:
 
         Type of Campaign: Prepaid or postpaid
@@ -56,10 +56,10 @@ info:
       /campaign/{sponsorId}/{campaignId}/active-sponsorship-list: Queries the list of users currently sponsored by the campaign. [OPTIONAL OPERATION]
       /campaign/{sponsorId}/{campaignId}/alert-subscription: Requests subscription to events associated with the campaign. Includes a webhook for notifications. In this version of the API, only consumption thresholds and expiration events are available. [OPTIONAL OPERATION]
       /campaign/{sponsorId}/{campaignId}/manage: Allows pausing and reactivating a campaign. During onboarding, it should be defined whether paused periods consume campaign validity time. [OPTIONAL OPERATION]
-    
+
     * Date and Time Formats *
     All date and time values in this API are represented using the ISO 8601 format. For example, '2023-11-22T13:37:00Z' represents November 22, 2023 at 1:37 PM UTC.
-    
+
     * Roles *
     Mobile Network Operators (MNOs): Providers of mobile services that manage network infrastructure and data provisioning.
     Sponsoring Companies (SCs): Companies that fund the use of mobile data for their clients or specific users, aiming to offer a no-cost data experience.
@@ -112,14 +112,14 @@ paths:
                 callbackToken:
                   description: Security token for authenticating notifications sent to the webhook.
                   type: string
-                  format: "uuid"  
+                  format: "uuid"
                   pattern: "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-4[0-9a-fA-F]{3}-[89aAbB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$" # UUID versión 4 regular expression
               required:
                 - sponsorId
                 - campaignId
                 - phoneNumber
                 - webhookUrl
-                - callbackToken   
+                - callbackToken
       callbacks:
         notifications:
           "{$request.body#/webhookUrl}":
@@ -162,7 +162,7 @@ paths:
           description: Successful operation. New sponsorship session created.
           headers:
             x-correlator:
-              $ref: '#/components/headers/x-correlator'       
+              $ref: '#/components/headers/x-correlator'
           content:
             application/json:
               schema:
@@ -179,8 +179,8 @@ paths:
                   endTime:
                     $ref: "#/components/schemas/time"
                     description: |
-                      End date and time of the sponsorship. 
-                      Calculated by adding the specified sponsorship duration to the start time (startTime). 
+                      End date and time of the sponsorship.
+                      Calculated by adding the specified sponsorship duration to the start time (startTime).
                       If duration is not specified, the default value defined in the onboarding campaign profile is used.
                   sponsoredDataVolume:
                     description: The assigned data volume for the user. This value is derived from either the sponsorship request or, if not specified in the request, from the default value defined in the campaign profile during onboarding.
@@ -188,12 +188,12 @@ paths:
                     minimum: 1
                     maximum: 1000
                 required:
-                - sponsorId
-                - campaignId
-                - sessionId
-                - startTime
-                - endTime
-                - sponsoredDataVolume
+                  - sponsorId
+                  - campaignId
+                  - sessionId
+                  - startTime
+                  - endTime
+                  - sponsoredDataVolume
         "400":
           $ref: "#/components/responses/Generic400"
         "401":
