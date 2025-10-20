@@ -60,7 +60,7 @@ The repository has no (pre)releases yet, work in progress is within the main bra
 
   * Schedule: !! tbd
   * [Registration / Join](https://zoom-lfx.platform.linuxfoundation.org/meetings/telcoapi) !! Update this link with your meeting registration/join link and delete the task
-  * Minutes: Access [meeting minutes](https://lf-camaraproject.atlassian.net/wiki/spaces/CAM/pages/245760081/Minutes+-+SponoredData) !! update this link to your minutes archive page using the "Share" link and delete the task
+  * Minutes: Access [meeting minutes](https://github.com/camaraproject/SponsoredData/tree/main/documentation/MeetingMinutes)
 * Mailing List
   * Subscribe / Unsubscribe to the mailing list <https://lists.camaraproject.org/g/sp-sponsored-data>.
   * A message to the community of this Sub Project can be sent using <sp-sponsored-data@lists.camaraproject.org>.
