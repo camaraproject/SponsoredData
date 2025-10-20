@@ -58,7 +58,7 @@ The repository has no (pre)releases yet, work in progress is within the main bra
 
 * Meetings are held virtually <!-- for new, independent Sandbox API repositories request a meeting link from the LF admin team or replace the information with the existing meeting information of the Sub Project -->
 
-  * Schedule: !! tbd
+  * Schedule: Bi-Weekly on Fridays at 14:00 UTC
   * [Registration / Join](https://zoom-lfx.platform.linuxfoundation.org/meetings/telcoapi) !! Update this link with your meeting registration/join link and delete the task
   * Minutes: Access [meeting minutes](https://github.com/camaraproject/SponsoredData/tree/main/documentation/MeetingMinutes)
 * Mailing List
