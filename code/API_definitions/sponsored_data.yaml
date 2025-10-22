@@ -1,7 +1,7 @@
 openapi: 3.0.3
 info:
   title: Sponsored Data API
-  version: wip
+  version: 0.1.0
 
   license:
     name: Apache 2.0
@@ -10,8 +10,6 @@ info:
   description: |
 
     Sponsored Data API for OpenGateway/CAMARA Project
-
-    * Working draft under discussion. Draft reference vesrion : draft-0.1 (commit, Oct 14th 2025) *
 
     The Sponsored Data API allows sponsoring companies (EPs) to cover the cost of mobile data access for end-users on 4G and 5G networks. This API is part of the Open Gateway/CAMARA initiative and provides a set of operations for the dynamic management of mobile data sponsorship. Sponsoring companies can start or revoke sponsorships for users, as well as query the status of both sponsorship sessions and their campaigns.
 
@@ -72,7 +70,7 @@ info:
     Sponsored Users (SU): Mobile network users whose mobile data usage is sponsored by the EPs.
 
 servers:
-  - url: "{apiRoot}/sponsored-data/v1.0.0"
+  - url: "{apiRoot}/sponsored-data/v0.1.0"
     variables:
       apiRoot:
         default: http://localhost:9091
