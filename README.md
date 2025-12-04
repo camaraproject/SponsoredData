@@ -13,8 +13,6 @@ Sandbox API Repository to describe, develop, document, and test the **Sponsored 
 
 * API Repository [wiki page](https://lf-camaraproject.atlassian.net/wiki/x/f4CVDg)
 
----
-
 ## Scope
 
 The **Sponsored Data** API enables a sponsoring company to cover the data usage of end users for a defined period and/or data volume, thereby strengthening its brand presence and enhancing the user experience.
@@ -44,14 +42,9 @@ The API supports the following operations:
 
 Identifiers such as **Sponsor_Id**, **Campaign_ID** and **Session_ID** are generated and managed by the Operator Platform (MNO). 
 
----
-
 ## Release Information
 
 The repository has no (pre)releases yet, work in progress is within the main branch.  
-
-
----
 
 ## Contributing
 
