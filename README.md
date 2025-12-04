@@ -7,10 +7,9 @@
 <a href="https://github.com/camaraproject/SponsoredData/releases/latest" title="Latest Release"><img src="https://img.shields.io/github/release/camaraproject/SponsoredData?style=plastic"></a>
 <a href="https://github.com/camaraproject/Governance/blob/main/ProjectStructureAndRoles.md" title="Sandbox API Repository"><img src="https://img.shields.io/badge/Sandbox%20API%20Repository-yellow?style=plastic"></a>
 
-# SponsoredData API
+# SponsoredData
 
-**Sandbox API Repository** to describe, develop, document, and test the **Sponsored Data Service API(s)**.  
-This repository currently belongs to the *Sandbox* stage and is under active development within the CAMARA framework.
+Sandbox API Repository to describe, develop, document, and test the **Sponsored Data Service API(s)**. This repository currently belongs to the *Sandbox* stage and is under active development within the CAMARA framework.
 
 * API Repository [wiki page](https://lf-camaraproject.atlassian.net/wiki/x/f4CVDg)
 
