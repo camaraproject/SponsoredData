@@ -42,9 +42,13 @@ The API supports the following operations:
 
 Identifiers such as **Sponsor_Id**, **Campaign_ID** and **Session_ID** are generated and managed by the Operator Platform (MNO). 
 
+<!-- CAMARA:RELEASE-INFO:START -->
+<!-- The following section is automatically maintained by the CAMARA project-administration tooling: https://github.com/camaraproject/project-administration -->
+
 ## Release Information
 
-The repository has no (pre)releases yet, work in progress is within the main branch.  
+The repository has no (pre)releases yet, work in progress is within the main branch.
+<!-- CAMARA:RELEASE-INFO:END -->
 
 ## Contributing
 
