@@ -1,7 +1,7 @@
 
 Feature: Sponsored Data API - Test scenarios (vwip)
 
-  # Version: v0.1.0
+  # Version: wip
   # Sattus: draft
 
   # Based on the OpenAPI spec sponsored_data.yaml
@@ -26,7 +26,7 @@ Feature: Sponsored Data API - Test scenarios (vwip)
 
   Background: Common setup for Sponsored Data API
     Given an environment at "apiRoot"
-    And the base resource "/sponsored-data/v0.1.0"
+    And the base resource "/sponsored-data/vwip"
     And the header "Content-Type" is set to "application/json"
     And the header "accessToken" is set to a valid access token
     And the header "x-correlator" complies with the schema at "#/components/parameters/x-correlator"
