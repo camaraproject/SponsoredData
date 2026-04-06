@@ -1,7 +1,7 @@
 openapi: 3.0.3
 info:
   title: Sponsored Data API
-  version: 0.1.0
+  version: wip
 
   license:
     name: Apache 2.0
@@ -70,7 +70,7 @@ info:
     Sponsored Users (SU): Mobile network users whose mobile data usage is sponsored by the EPs.
 
 servers:
-  - url: "{apiRoot}/sponsored-data/v0.1.0"
+  - url: "{apiRoot}/sponsored-data/vwip"
     variables:
       apiRoot:
         default: http://localhost:9091
